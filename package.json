@@ -1,0 +1,21 @@
+{
+  "name": "desafiotype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.js",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "express": "^4.17.1",
+    "knex": "^0.21.4",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.57"
+  }
+}
