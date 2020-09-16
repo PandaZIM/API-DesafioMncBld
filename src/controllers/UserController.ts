@@ -40,6 +40,7 @@ export default class UserController {
             cpf
         } = req.body
 
+        console.log(req.body)
         
         
         try {
